@@ -1,39 +1,27 @@
 ﻿using System;
 
-namespace Massiv4
+namespace Massiv3
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string[,] students =
+            string[] name =
 {
-    { "X" ,"O","X" ,"O","X" ,"O","X" ,"O","X" ,"O", },
-    { "X" ,"O","X" ,"O","X" ,"O","X" ,"O","X" ,"O", },
-    { "X" ,"O","X" ,"O","X" ,"O","X" ,"O","X" ,"O", },
-    { "X" ,"O","X" ,"O","X" ,"O","X" ,"O","X" ,"O", },
-    { "X" ,"O","X" ,"O","X" ,"O","X" ,"O","X" ,"O", },
-    { "X" ,"O","X" ,"O","X" ,"O","X" ,"O","X" ,"O", },
-    { "X" ,"O","X" ,"O","X" ,"O","X" ,"O","X" ,"O", },
-     { "X" ,"O","X" ,"O","X" ,"O","X" ,"O","X" ,"O", },
-      { "X" ,"O","X" ,"O","X" ,"O","X" ,"O","X" ,"O", },
-       { "X" ,"O","X" ,"O","X" ,"O","X" ,"O","X" ,"O", },
+    "",
+    
 };
 
-            int heigth = students.GetLength(0);
+            Console.Write("Введите имя:");
+            
+            string name1 = Console.ReadLine();
 
-            int width = students.GetLength(1);
 
-            int students1 = 0;
-            for (int y = 0; y < heigth; y++)
+            for (int i = name1.Length - 1; i >= 0; i--)
             {
-                string currentValue = students[y, students1];
-
-                for (int i = 0; i < width; i++)
-                {
-                    Console.Write(students[y, i]);
-                }
-                Console.WriteLine();
+                Console.Write(name1[i]);
             }
+            Console.ReadLine();
+        }
     }
 }
